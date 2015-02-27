@@ -1,4 +1,5 @@
-var usd = require('../');
+var assert  = require('assert');
+var usd     = require('../');
 
 describe('USD', function(){
   it('.pennies()', function(){

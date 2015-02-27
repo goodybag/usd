@@ -30,26 +30,24 @@ define( function( require, exports, module ){
     , dollars: function( val ){
         if ( !val && val != 0 ) return this.toDollars();
 
-        val = Math.round( val * 100 );
+        val = Math.round( parseFloat( val ) * 100 );
 
         if ( isNaN( val ) ){
           throw new Error('Invalid dollars value');
         }
 
-        this._pennies = val;
-
-        return this;
+        return this.pennies( val );
       }
 
     , toDollars: function(){
         // parse as float incase of partial cents
-        var pennies = parseFloat( pennies );
+        var pennies = parseFloat( this._pennies );
 
         if ( isNaN( pennies ) ){
           return '0';
         }
 
-        module.exports.round10( cents / 100, -2 ).toFixed(2);
+        return module.exports.round10( pennies / 100, -2 ).toFixed(2);
       }
 
     , toPennies: function(){

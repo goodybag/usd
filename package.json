@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/goodybag/usd/issues"
   },
-  "homepage": "https://github.com/goodybag/usd"
+  "homepage": "https://github.com/goodybag/usd",
+  "dependencies": {
+    "stampit": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
