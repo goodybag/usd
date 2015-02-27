@@ -1,0 +1,29 @@
+{
+  "name": "usd",
+  "version": "1.0.0",
+  "description": "AMD/CommonJS Stampit factory for creating models to handle USD logic",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodybag/usd.git"
+  },
+  "keywords": [
+    "usd",
+    "money",
+    "cents",
+    "dollars",
+    "stampit"
+  ],
+  "author": "John Fawcett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodybag/usd/issues"
+  },
+  "homepage": "https://github.com/goodybag/usd"
+}
