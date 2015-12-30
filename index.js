@@ -39,6 +39,20 @@ define( function( require, exports, module ){
         return this.pennies( val );
       }
 
+    , toDollarsNoCents: function(){
+        // parse as float incase of partial cents
+        var pennies = parseFloat( this._pennies );
+
+        if ( isNaN( pennies ) ){
+          return '0';
+        }
+
+        return module.exports
+          .round10( pennies / 100, -2 )
+          .toFixed(2)
+          .split('.')[0];
+      }
+
     , toDollars: function(){
         // parse as float incase of partial cents
         var pennies = parseFloat( this._pennies );
