@@ -1,6 +1,6 @@
 {
   "name": "usd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AMD/CommonJS Stampit factory for creating models to handle USD logic",
   "main": "index.js",
   "directories": {
