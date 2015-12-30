@@ -28,9 +28,9 @@ describe('USD', function(){
 
   it('.toDollarsNoCents()', function(){
     var $amt = usd();
-    assert.equal( $amt.pennies(150).toDollarsNoCents(), '1' );
-    assert.equal( $amt.pennies(197).toDollarsNoCents(), '1' );
-    assert.equal( $amt.pennies(2142).toDollarsNoCents(), '21' );
-    assert.equal( $amt.pennies(2100).toDollarsNoCents(), '21' );
+    assert.equal( $amt.pennies(150).toDollarsNoCents(), 1 );
+    assert.equal( $amt.pennies(197).toDollarsNoCents(), 1 );
+    assert.equal( $amt.pennies(2142).toDollarsNoCents(), 21 );
+    assert.equal( $amt.pennies(2100).toDollarsNoCents(), 21 );
   });
 });

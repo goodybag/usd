@@ -47,7 +47,7 @@ define( function( require, exports, module ){
           return '0';
         }
 
-        return module.exports
+        return +module.exports
           .round10( pennies / 100, -2 )
           .toFixed(2)
           .split('.')[0];
